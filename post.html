@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="global.css" type="text/css" rel="stylesheet" />
+        <link href="post.css" type="text/css" rel="stylesheet" />
+        <script src="global.js"></script>
+    </head>
+    <body>
+        <h1 id="websiteTitle" style="display: inline"></h1>
+        <button style="float: right" onclick="darkModeToggle()">
+            Dark mode
+        </button>
+        <button
+            style="float: right"
+            onclick="document.location.href = 'login.html';"
+        >
+            Log in
+        </button>
+        <p class="loginStatus">Not logged in</p>
+        <br />
+        <br />
+        <button onclick="document.location.href = 'index.html';">
+            Go back
+        </button>
+        <br />
+        <h2 id="postTitle">Post title</h2>
+        <pre id="postContent">
+Post content
+        </pre>
+        <hr />
+        <form action="">
+            <label for="newComment">Add comment</label><br />
+            <textarea id="newComment" name="newComment"></textarea><br />
+            <input type="submit" value="Submit" />
+        </form>
+        <br />
+        <div class="comment">
+            <h5 class="commentInfo">Arcadi Konoval - 23:10 on May 28, 2025</h5>
+            <p class="commentContent">Wow! Amazing.</p>
+        </div>
+        <br />
+        <div class="comment">
+            <h5 class="commentInfo">Arcadi Konoval - 23:06 on May 28, 2025</h5>
+            <p class="commentContent">Wow! Amazing.</p>
+        </div>
+        <script src="post.js"></script>
+    </body>
+</html>

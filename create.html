@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="global.css" type="text/css" rel="stylesheet" />
+        <link href="create.css" type="text/css" rel="stylesheet" />
+        <script src="global.js"></script>
+    </head>
+    <body>
+        <h1 id="websiteTitle" style="display: inline"></h1>
+        <button style="float: right" onclick="darkModeToggle()">
+            Dark mode
+        </button>
+        <button
+            style="float: right"
+            onclick="document.location.href = 'login.html';"
+        >
+            Log in
+        </button>
+        <p class="loginStatus">Not logged in</p>
+        <br />
+        <br />
+        <h2>Create a post</h2>
+        <form action="">
+            <label for="postTitle">Post title</label><br />
+            <input type="text" id="postTitle" name="postTitle" /><br />
+            <label for="postContent">Post content</label><br />
+            <textarea id="postContent" name="postContent"></textarea><br />
+            <br />
+            <label for="outerColour"
+                >Outer colour (outer border and title):</label
+            >
+            <input
+                type="color"
+                id="outerColour"
+                name="outerColour"
+                value="#000000"
+            /><br />
+            <label for="outerColour">Inner colour (content):</label>
+            <input
+                type="color"
+                id="outerColour"
+                name="outerColour"
+                value="#000000"
+            /><br />
+            <i
+                >Note: if any colour is strictly white/black or you do not
+                change these colours, it will automatically update with the
+                light/dark mode configuration.</i
+            ><br />
+            <button onclick="history.back();">Cancel</button>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="global.css" type="text/css" rel="stylesheet" />
+        <link href="index.css" type="text/css" rel="stylesheet" />
+        <script src="global.js"></script>
+    </head>
+    <body>
+        <h1 id="websiteTitle" style="display: inline"></h1>
+        <button style="float: right" onclick="darkModeToggle()">
+            Dark mode
+        </button>
+        <button
+            style="float: right"
+            onclick="document.location.href = 'login.html';"
+        >
+            Log in
+        </button>
+        <p class="loginStatus">Not logged in</p>
+        <br />
+        <br />
+        <button
+            id="createPostButton"
+            onclick="document.location.href = 'create.html';"
+        >
+            Create post (as guest)
+        </button>
+        <br />
+        <br />
+        <script src="index.js"></script>
+        <div class="postPreview">
+            <h3 class="postPreviewTitle">Sample post</h3>
+            <h5 class="postPreviewInfo">
+                Arcadi Konoval - 23:06 on May 28, 2025
+            </h5>
+            <br />
+            <pre class="postPreviewContent">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre
+            >
+            <br />
+            <button>View post</button>
+        </div>
+        <div class="postPreview">
+            <h3 class="postPreviewTitle">Reminder to dress-up for the cold</h3>
+            <h5 class="postPreviewInfo">
+                Arcadi Konoval - 16:00 on Jan 1, 1969
+            </h5>
+            <br />
+            <pre class="postPreviewContent">
+Please dress-up, as it is going to get quite cold within the next few days:
+Thursday ☼: -6°C / -12°C
+Friday ☼: -8°C / -14°C
+Saturday ❄: -5°C / -11°C
+Sunday ❄: -1°C / -2°C </pre
+            >
+            <br />
+            <button>View post</button>
+        </div>
+        <div class="postPreview">
+            <h3 class="postPreviewTitle">¿Quién quiere hablar español?</h3>
+            <h5 class="postPreviewInfo">
+                Arcadi Konoval - 17:43 on Nov 28, 2025
+            </h5>
+            <br />
+            <pre class="postPreviewContent">
+¡Quiero hablar español con la gente pronto! ¿Pueden venir el domingo a las 14:00 en el centro comunitario?</pre
+            >
+            <br />
+            <button>View post</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.postPreview {
+    border: 1px solid;
+    padding: 7.5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border-color: magenta; /* will match whatever title colour is set to */
+}
+
+.postPreviewTitle {
+    color: magenta; /* Will be set by the user later */
+    margin: 0;
+}
+
+.postPreviewInfo {
+    color: magenta; /* will match whatever title colour is set to */
+    font-style: italic;
+    margin: 0;
+}
+
+.postPreviewContent {
+    text-wrap: wrap;
+    margin: 0;
+    color: chocolate; /* Will be set by the user later */
+}
+
+.postPreviewContent:hover {
+    font-weight: bold;
+}

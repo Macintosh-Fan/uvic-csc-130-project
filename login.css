@@ -1,0 +1,16 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+}
+
+.loginForm {
+    border: 1px solid;
+    border-radius: 2%;
+    margin: auto;
+    padding: 1%;
+}
