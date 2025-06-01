@@ -30,29 +30,29 @@ ul {
 
 
 label{
-    width: 100px;
-    height: 50px;
+    width: 50px;
+    height: 25px;
     position: relative;
     display: block;
     /* background: gray; */
     background: white;
     
-    border-radius: 50px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.5), inset 0px -5px 15 rgba(0, 0, 0, 0,0.5);
+    border-radius: 25px;
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.5), inset 0px -5px 15 rgba(0, 0, 0, 0,0.5);
     cursor: pointer;
     transition: 0.5s;
 }
 
 label:after{
     content: "";
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 3px;
+    left: 3px;
     background: linear-gradient(180deg,rgb(238, 218, 218),rgb(46, 158, 196));
     border-radius: 50%;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
     transition: 0.5s;
     
 
@@ -71,7 +71,7 @@ input:checked + label{
 }
 
 input:checked + label:after{
-    left: calc(100% - 45px);;
+    left: calc(100% - 23px);;
     background: linear-gradient(0deg,rgb(238, 218, 218),rgb(2, 44, 58));
     transition: 0.4; 
 
@@ -79,10 +79,10 @@ input:checked + label:after{
 }
 
 label:active:after{
-    width: 50px;
+    width: 25px;
 }
 
 .toggle-flex{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
