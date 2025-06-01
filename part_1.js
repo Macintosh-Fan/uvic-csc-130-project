@@ -15,6 +15,11 @@ function darkModeToggle() {
 }
 // i didnt want to change your function so i just added an event listner to call ur function
 window.addEventListener("DOMContentLoaded", function () {
-    const mode = document.getElementById("toggle_dark");
-    mode.addEventListener("change", darkModeToggle);
-});
+    const toggle = document.getElementById("toggle_dark");
+    const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    toggle.addEventListener("change", darkModeToggle);
+    if (prefersLight){
+        toggle.click()
+    }
+    
+})
