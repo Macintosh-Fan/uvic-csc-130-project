@@ -13,3 +13,8 @@ function darkModeToggle() {
         bodyStyle.color = DARK;
     }
 }
+// i didnt want to change your function so i just added an event listner to call ur function
+window.addEventListener("DOMContentLoaded", function () {
+    const mode = document.getElementById("toggle_dark");
+    mode.addEventListener("change", darkModeToggle);
+});
