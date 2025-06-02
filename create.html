@@ -4,13 +4,16 @@
         <meta charset="UTF-8" />
         <link href="global.css" type="text/css" rel="stylesheet" />
         <link href="create.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="toggleB.css">
         <script src="global.js"></script>
     </head>
     <body>
         <h1 id="websiteTitle" style="display: inline"></h1>
-        <button style="float: right" onclick="darkModeToggle()">
-            Dark mode
-        </button>
+        
+        <div class="toggle-flex">
+            <input type="checkbox" id="toggle_dark" />
+            <label for="toggle_dark"></label>
+        </div>
         <button
             style="float: right"
             onclick="document.location.href = 'login.html';"
