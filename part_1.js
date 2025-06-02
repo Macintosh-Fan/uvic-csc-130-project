@@ -1,3 +1,4 @@
+//delete this later if u dont need it anymore
 const BRIGHT = "white";
 const DARK = "black";
 
