@@ -1,6 +1,6 @@
 [
     {
-        "author": "arcadkonoval",
+        "author": "arcadikonoval",
         "time": 0,
         "title": "Reminder to dress-up for the cold",
         "content": "Please dress-up, as it is going to get quite cold within the next few days:\nThursday ☼: -6°C / -12°C\nFriday ☼: -8°C / -14°C\nSaturday ❄: -5°C / -11°C\nSunday ❄: -1°C / -2°C",
@@ -8,14 +8,14 @@
         "innerColour": "royalblue",
         "comments": [
             {
-                "author": "arcadkonoval-fr",
+                "author": "arcadikonoval-fr",
                 "time": 60000,
                 "content": "Oui. Il fera très froid."
             }
         ]
     },
     {
-        "author": "arcadkonoval-es",
+        "author": "arcadikonoval-es",
         "time": 1732844580000,
         "title": "¿Quién quiere hablar español?",
         "content": "¡Quiero hablar español con la gente pronto! ¿Pueden venir el domingo a las 14:00 en el centro comunitario?",
@@ -24,7 +24,7 @@
         "comments": []
     },
     {
-        "author": "arcadkonoval",
+        "author": "arcadikonoval",
         "time": 1748498760000,
         "title": "Sample post",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -32,12 +32,12 @@
         "innerColour": "chocolate",
         "comments": [
             {
-                "author": "arcadkonoval",
+                "author": "arcadikonoval",
                 "time": 1748498820000,
                 "content": "Nice Latin I wrote."
             },
             {
-                "author": "arcadkonoval-it",
+                "author": "arcadikonoval-it",
                 "time": 1748498880000,
                 "content": "Sì."
             }

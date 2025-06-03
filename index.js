@@ -29,7 +29,7 @@ function getMonthString(monthInteger) {
 
 let jsonContent = [
     {
-        author: "arcadkonoval",
+        author: "arcadikonoval",
         time: 0,
         title: "Reminder to dress-up for the cold",
         content:
@@ -38,14 +38,14 @@ let jsonContent = [
         innerColour: "royalblue",
         comments: [
             {
-                author: "arcadkonoval-fr",
+                author: "arcadikonoval-fr",
                 time: 60000,
                 content: "Oui. Il fera très froid.",
             },
         ],
     },
     {
-        author: "arcadkonoval-es",
+        author: "arcadikonoval-es",
         time: 1732844580000,
         title: "¿Quién quiere hablar español?",
         content:
@@ -55,7 +55,7 @@ let jsonContent = [
         comments: [],
     },
     {
-        author: "arcadkonoval",
+        author: "arcadikonoval",
         time: 1748498760000,
         title: "Sample post",
         content:
@@ -64,12 +64,12 @@ let jsonContent = [
         innerColour: "chocolate",
         comments: [
             {
-                author: "arcadkonoval",
+                author: "arcadikonoval",
                 time: 1748498820000,
                 content: "Nice Latin I wrote.",
             },
             {
-                author: "arcadkonoval-it",
+                author: "arcadikonoval-it",
                 time: 1748498880000,
                 content: "Sì.",
             },
