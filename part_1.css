@@ -29,24 +29,22 @@ ul {
 } 
 
 
-.animate {
+..animate {
   font-size: 30px;
   border-bottom: 2px solid #ffd900;
 }
- .animate span {
-	display: inline-block;
-} 
-.title span {
-	opacity: 0;
-	transform: translate(-150px, 0) scale(.3);
-  /* transform: translate(150px, 0) scale(.3); */
-	animation: leftRight 3.0s forwards infinite;
-  /* animation: leftRight 3.0s backwards; */
+.animate span {
+  display: inline-block;
+  animation: slideLR 4s infinite ease-in-out;
 }
 
+@keyframes slideLR {
+  /* 
+  50%  { transform: translateX(50px) ; }
+  90% { transform: translateX(-50px) ; } */
 
-@keyframes leftRight {
-	40% {
+  20%   { transform: translateX(-50px) ; }
+  40% {
 		transform: translate(50px, 0) scale(.7);
 		opacity: 1;
 	}
