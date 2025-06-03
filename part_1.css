@@ -26,6 +26,42 @@ ul {
     text-align: center;
     color: darkgoldenrod;
     font-family: Copperplate;
+} 
+
+
+.animate {
+  font-size: 30px;
+  border-bottom: 2px solid #ffd900;
+}
+ .animate span {
+	display: inline-block;
+} 
+.title span {
+	opacity: 0;
+	transform: translate(-150px, 0) scale(.3);
+  /* transform: translate(150px, 0) scale(.3); */
+	animation: leftRight 3.0s forwards infinite;
+  /* animation: leftRight 3.0s backwards; */
 }
 
-/* moved to toggleB.CSS */
+
+@keyframes leftRight {
+	40% {
+		transform: translate(50px, 0) scale(.7);
+		opacity: 1;
+	}
+
+	60% {
+		color: #0f40ba;
+	}
+
+	80% {
+		transform: translate(0) scale(2);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
