@@ -8,11 +8,11 @@ function darkModeToggle() {
     if (bgColor === BRIGHT) {
         bodyStyle.backgroundColor = DARK;
         bodyStyle.color = BRIGHT;
-        bodyStyle.filter = "100%";
+        bodyStyle.filter = "brightness(100%)";
     } else {
         bodyStyle.backgroundColor = BRIGHT;
         bodyStyle.color = DARK;
-        bodyStyle.filter = "75%";
+        bodyStyle.filter = "brightness(75%)";
     }
 }
 // i didnt want to change your function so i just added an event listner to call ur function
