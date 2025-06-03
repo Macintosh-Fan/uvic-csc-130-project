@@ -1,27 +1,81 @@
-<!doctype html>
-<html lang="en-CA">
-    <head>
-        <meta charset="UTF-8" />
-        <link href="global.css" type="text/css" rel="stylesheet" />
-        <link href="login.css" type="text/css" rel="stylesheet" />
-        <link rel="stylesheet" href="toggleB.css">
-        
-        <script src="global.js"></script>
-        <script src="login.js"></script>
-    </head>
-    <body>
-        
-        <div class="loginForm">
-            <h3>Log in with any username</h3>
-            <br />
-            <input type="text" id="username" />
-            <br />
-            <br />
-            <button onclick="history.back();">Cancel</button>
-            <button onclick="">Log in</button>
-            <br />
-        </div>
-        
+<!DOCTYPE html>
 
-    </body>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+
+  <!-- from https://codepen.io/marko-zub/pen/mzPeOV
+   they were using haml and scss 
+   i tried my best to  implement it using pure css and html -->
+  
+
+</head>
+
+<body>
+    <!-- https://codepen.io/delroyprithvi/pen/LYyJROR -->
+        
+        <div class="shooting-star">hello</div>
+        <div class="shooting-star">parsa</div>
+        <div class="shooting-star">arcadi</div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+  <form class="form" autocomplete="off">
+    <div class="control">
+      <h1>Sign In</h1>
+    </div>
+
+    <div class="control block-cube block-input">
+      <input name="username" type="text" placeholder="Username" />
+
+      <div class="bg-top">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="bg-right">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="bg">
+        <div class="bg-inner"></div>
+      </div>
+    </div>
+
+    <button class="btn block-cube block-cube-hover" type="button">
+      <div class="bg-top">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="bg-right">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="bg">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="text">Log In</div>
+    </button>
+
+
+    <div style="height: 16px;"></div>
+
+    <button class="btn block-cube block-cube-hover" type="button"
+            onclick="history.back()">
+      <div class="bg-top">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="bg-right">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="bg">
+        <div class="bg-inner"></div>
+      </div>
+
+      <div class="text">Back</div>
+    </button>
+
+  </form>
+</body>
 </html>
