@@ -1,54 +1,74 @@
 <!doctype html>
 <html lang="en-CA">
-<head>
-  <meta charset="UTF-8" />
-  <link href="create.css" rel="stylesheet" />
-  <link rel="stylesheet" href="toggleB.css">
-  <script src="toggle.js" defer></script>
-  <title>Create Post</title>
-</head>
-<body>
-  <div class="header">
-    <div class="toggle-flex">
-      <input type="checkbox" id="toggle_dark" />
-      <label for="toggle_dark"></label>
-    </div>
-    <button id="loginB" onclick="document.location.href='login.html'">
-      Log in
-    </button>
-  </div>
-
-  <div class="create-card">
-    <h2>Create a post</h2>
-    <form action="">
-      <div class="form-group">
-        <label for="postTitle">Post title</label>
-        <input type="text" id="postTitle" name="postTitle" />
-      </div>
-
-      <div class="form-group">
-        <label for="postContent">Post content</label>
-        <textarea id="postContent" name="postContent" rows="5"></textarea>
-      </div>
-
-      <div class="form-group colour-group">
-        <div class="colour-picker">
-          <label for="outerColour">Outer colour (border/title)</label>
-          <input type="color" id="outerColour" name="outerColour" value="#000000" />
+    <head>
+        <meta charset="UTF-8" />
+        <link href="create.css" rel="stylesheet" />
+        <link rel="stylesheet" href="toggleB.css" />
+        <script src="toggle.js" defer></script>
+        <title>Create Post</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="toggle-flex">
+                <input type="checkbox" id="toggle_dark" />
+                <label for="toggle_dark"></label>
+            </div>
+            <button id="loginB" onclick="document.location.href='login.html'">
+                Log in
+            </button>
         </div>
-        <div class="colour-picker">
-          <label for="innerColour">Inner colour (content)</label>
-          <input type="color" id="innerColour" name="innerColour" value="#ffffff" />
-        </div>
-      </div>
 
-      <div class="button-group">
-        <button type="button" class="btn-secondary" onclick="history.back()">
-          Cancel
-        </button>
-        <input type="submit" value="Submit" class="btn-primary" />
-      </div>
-    </form>
-  </div>
-</body>
+        <div class="create-card">
+            <h2>Create a post</h2>
+            <form action="">
+                <div class="form-group">
+                    <label for="postTitle">Post title</label>
+                    <input type="text" id="postTitle" name="postTitle" />
+                </div>
+
+                <div class="form-group">
+                    <label for="postContent">Post content</label>
+                    <textarea
+                        id="postContent"
+                        name="postContent"
+                        rows="5"
+                    ></textarea>
+                </div>
+
+                <div class="form-group colour-group">
+                    <div class="colour-picker">
+                        <label for="outerColour"
+                            >Outer colour (border/title)</label
+                        >
+                        <input
+                            type="color"
+                            id="outerColour"
+                            name="outerColour"
+                            value="#000000"
+                        />
+                    </div>
+                    <div class="colour-picker">
+                        <label for="innerColour">Inner colour (content)</label>
+                        <input
+                            type="color"
+                            id="innerColour"
+                            name="innerColour"
+                            value="#ffffff"
+                        />
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button
+                        type="button"
+                        class="btn-secondary"
+                        onclick="history.back()"
+                    >
+                        Cancel
+                    </button>
+                    <input type="submit" value="Submit" class="btn-primary" />
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
