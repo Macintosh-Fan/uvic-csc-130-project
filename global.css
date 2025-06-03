@@ -2,6 +2,7 @@
     body {
         background-color: white;
         color: black;
+        filter: brightness(75%);
     }
 }
 
@@ -9,6 +10,7 @@
     body {
         background-color: black;
         color: white;
+        filter: brightness(100%);
     }
 }
 
