@@ -1,53 +1,57 @@
 <!doctype html>
 <html lang="en-CA">
-    <head>
-        <meta charset="UTF-8" />
-        <link href="global.css" type="text/css" rel="stylesheet" />
-        <link href="post.css" type="text/css" rel="stylesheet" />
-        <link rel="stylesheet" href="toggleB.css" />
-        <script src="global.js"></script>
-        <script src="post.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <link href="post.css" rel="stylesheet" />
+  <link href="toggleB.css" rel="stylesheet" />
+  <script src="toggle.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>View Post</title>
+</head>
+<body>
+  <div class="header">
+    <div class="toggle-flex">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    </head>
-    <body>
-        <h1 id="websiteTitle" style="display: inline"></h1>
-        <div class="toggle-flex">
-            <input type="checkbox" id="toggle_dark" />
-            <label for="toggle_dark"></label>
-        </div>
-        <button
-            style="float: right"
-            onclick="document.location.href = 'login.html';"
-        >
-            Log in
-        </button>
-        <p class="loginStatus">Not logged in</p>
-        <br />
-        <br />
-        <button onclick="document.location.href = 'index.html';">
-            Go back
-        </button>
-        <br />
-        <h2 id="postTitle">Post title</h2>
-        <pre id="postContent">
+                <button onclick="document.location.href='index.html'">
+            
+    Go back
+  </button>
+      <button id="loginB" onclick="document.location.href='login.html'">
+      Log in
+    </button>
+      <input type="checkbox" id="toggle_dark" />
+      <label for="toggle_dark"></label>
+
+    </div>
+
+  </div>
+
+
+  <h1 id="websiteTitle" style="display: inline"></h1>
+
+
+
+  <h2 id="postTitle">Post title</h2>
+  <pre id="postContent">
 Post content
-        </pre>
-        <hr />
-        <form action="">
-            <label for="newComment">Add comment</label><br />
-            <textarea id="newComment" name="newComment"></textarea><br />
-            <input type="submit" value="Submit" />
-        </form>
-        <br />
-        <div class="comment">
-            <h5 class="commentInfo">Arcadi Konoval - 23:10 on May 28, 2025</h5>
-            <p class="commentContent">Wow! Amazing.</p>
-        </div>
-        <br />
-        <div class="comment">
-            <h5 class="commentInfo">Arcadi Konoval - 23:06 on May 28, 2025</h5>
-            <p class="commentContent">Wow! Amazing.</p>
-        </div>
-    </body>
+  </pre>
+  <hr />
+
+  <form action="">
+    <label for="newComment">Add comment</label><br />
+    <textarea id="newComment" name="newComment"></textarea><br />
+    <input type="submit" value="Submit" />
+  </form>
+  <br />
+
+  <div class="comment">
+    <h5 class="commentInfo">Arcadi Konoval - 23:10 on May 28, 2025</h5>
+    <p class="commentContent">Wow! Amazing.</p>
+  </div>
+  <br />
+  <div class="comment">
+    <h5 class="commentInfo">Arcadi Konoval - 23:06 on May 28, 2025</h5>
+    <p class="commentContent">Wow! Amazing.</p>
+  </div>
+</body>
 </html>
