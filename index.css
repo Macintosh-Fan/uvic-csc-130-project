@@ -26,3 +26,19 @@
 .postPreviewContent:hover {
     font-weight: bold;
 }
+
+#loginB{
+  float: right;               
+  background-color: darkgoldenrod;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#loginB:hover {
+  background-color: goldenrod;
+}
