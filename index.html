@@ -4,16 +4,19 @@
         <meta charset="UTF-8" />
         <link href="global.css" type="text/css" rel="stylesheet" />
         <link href="index.css" type="text/css" rel="stylesheet" />
-        <link rel="stylesheet" href="toggleB.css">
-        <script src="global.js"></script>
+        <link rel="stylesheet" href="toggleB.css" />
+        <script src="global.js" defer></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <h1 id="websiteTitle" style="display: inline"></h1>
-                <div class="toggle-flex">
+        <div class="toggle-flex">
             <input type="checkbox" id="toggle_dark" />
             <label for="toggle_dark"></label>
         </div>
-        <button id="loginB"
+        <button
+            id="loginB"
             style="float: right"
             onclick="document.location.href = 'login.html';"
         >
