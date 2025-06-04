@@ -4,6 +4,8 @@
         <title>Login</title>
         <link rel="stylesheet" href="login.css" />
 
+        <script src="login.js" defer></script>
+
         <!-- from https://codepen.io/marko-zub/pen/mzPeOV
    they were using haml and scss
    i tried my best to  implement it using pure css and html -->
@@ -25,6 +27,7 @@
                     name="username"
                     type="text"
                     placeholder="Enter any username"
+                    id="username"
                 />
 
                 <div class="bg-top">
@@ -40,7 +43,11 @@
                 </div>
             </div>
 
-            <button class="btn block-cube block-cube-hover" type="button">
+            <button
+                class="btn block-cube block-cube-hover"
+                type="button"
+                onclick="login()"
+            >
                 <div class="bg-top">
                     <div class="bg-inner"></div>
                 </div>
