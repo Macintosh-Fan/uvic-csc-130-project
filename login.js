@@ -8,7 +8,7 @@ function login() {
         username.length >= MIN_USERNAME_LENGTH &&
         username.length <= MAX_USERNAME_LENGTH
     ) {
-        document.cookie = "username=" + username;
+        document.cookie = "username=" + username + "; path=/";
         document.location.href = "index.html";
     } else {
         window.alert(
