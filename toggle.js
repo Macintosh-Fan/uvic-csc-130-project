@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  if (prefersDark) {
+  if (!prefersDark) {
     toggle.click();
   }
 })
