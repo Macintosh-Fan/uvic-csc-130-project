@@ -147,6 +147,16 @@ body {
   }
 }
 
+button {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ccc;
+}
 
 .button-group {
   display: flex;
