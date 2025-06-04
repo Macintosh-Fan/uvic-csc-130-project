@@ -26,7 +26,6 @@ let username = getCookie("username");
 if (username) {
     document.querySelector("#loginB").textContent = "Log out of " + username;
     document.querySelector("#loginB").onclick = function () {
-        console.log("TEST");
         logout();
     };
     document.querySelector("#createPostButton").textContent = "Create post";
