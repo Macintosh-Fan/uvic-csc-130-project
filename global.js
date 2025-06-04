@@ -23,6 +23,6 @@ window.addEventListener("DOMContentLoaded", function () {
     ).matches;
     toggle.addEventListener("change", darkModeToggle);
     if (prefersLight) {
-        toggle.click();
+        toggle.click()
     }
-});
+})

@@ -157,6 +157,13 @@ button {
 button:hover {
   background-color: #ccc;
 }
+body.dark button {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #e0e0e0;
+}
+
+
 
 .button-group {
   display: flex;
