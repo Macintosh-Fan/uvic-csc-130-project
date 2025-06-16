@@ -95,7 +95,7 @@ for (let i = jsonContent.length - 1; i > -1; i--) {
     infoElement.style.color = post.outerColour;
     let postDate = new Date(post.time);
     infoElement.textContent =
-        post.author +
+        (post.author != null ? post.author : "Guest user") +
         " - " +
         String(postDate.getHours()).padStart(2, "0") +
         ":" +
