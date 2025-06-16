@@ -131,7 +131,7 @@ for (let i = jsonContent.length - 1; i > -1; i--) {
         commentInfoElement.className = "commentInfo";
         let commentDate = new Date(comment.time);
         commentInfoElement.textContent =
-            comment.author +
+            (comment.author != null ? comment.author : "Guest user") +
             " - " +
             String(commentDate.getHours()).padStart(2, "0") +
             ":" +
