@@ -1,59 +1,60 @@
 <!doctype html>
 <html lang="en-CA">
-    <head>
-        <meta charset="UTF-8" />
-        <link href="post.css" rel="stylesheet" />
-        <link href="toggleB.css" rel="stylesheet" />
-        <script src="toggle.js" defer></script>
-        <script src="loginManagement.js" defer></script>
-        <script src="post.js" defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <title>View Post</title>
-    </head>
-    <body>
-        <div class="header">
-            <div class="toggle-flex">
-                <button onclick="document.location.href='index.html'">
-                    Go back
-                </button>
-                <button
-                    id="loginB"
-                    onclick="document.location.href='login.html'"
-                >
-                    Log in
-                </button>
-                <input type="checkbox" id="toggle_dark" />
-                <label for="toggle_dark"></label>
-            </div>
-        </div>
-
-        <h1 id="websiteTitle" style="display: inline"></h1>
-
-        <h2 id="postTitle">Post title</h2>
-        <pre id="postInfo">Author - TimeStamp</pre>
-        <pre id="postContent">Post content</pre>
-        <hr />
-
-        <form
-            action="_comment_creation.php"
-            id="createCommentForm"
-            method="post"
+  <head>
+    <meta charset="UTF-8" />
+    <link href="post.css" rel="stylesheet" />
+    <link href="toggleB.css" rel="stylesheet" />
+    <script src="toggle.js" defer></script>
+    <script src="loginManagement.js" defer></script>
+    <script src="post.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>View Post</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="toggle-flex">
+        <button onclick="document.location.href='index.html'">
+          Go back
+        </button>
+        <button
+          id="loginB"
+          onclick="document.location.href='login.html'"
         >
-            <label for="newComment">Add comment</label><br />
-            <textarea id="newComment" name="newComment"></textarea><br />
-            <input type="submit" value="Submit" />
-        </form>
-        <script>
-            let createCommentForm =
-                document.getElementById("createCommentForm");
-            let formIdToPass = document.createElement("input");
-            formIdToPass.setAttribute("type", "hidden");
-            formIdToPass.setAttribute("name", "postId");
-            formIdToPass.setAttribute(
-                "value",
-                new URLSearchParams(window.location.search).get("id"),
-            );
-            createCommentForm.appendChild(formIdToPass);
-        </script>
-    </body>
+          Log in
+        </button>
+        <input type="checkbox" id="toggle_dark" />
+        <label for="toggle_dark"></label>
+      </div>
+    </div>
+
+    <h1 id="websiteTitle" style="display: inline"></h1>
+
+    <h2 id="postTitle">Post title</h2>
+    <pre id="postInfo">Author - TimeStamp</pre>
+    <pre id="postContent">Post content</pre>
+    <hr />
+
+    <form
+      action="_comment_creation.php"
+      id="createCommentForm"
+      method="post"
+    >
+      <label for="newComment">Add comment</label><br />
+      <textarea id="newComment" name="newComment"></textarea><br />
+      <input type="submit" value="Submit" />
+      <script>
+        // pass to php 
+        const createCommentForm = document.getElementById("createCommentForm");
+        const hiddenId = document.createElement("input");
+        hiddenId.type = "hidden";
+        hiddenId.name = "postId";
+        hiddenId.value = new URLSearchParams(window.location.search).get("id");
+        createCommentForm.appendChild(hiddenId);
+      </script>
+    </form>
+    <section id="commentsSection">
+      <h3>Comments</h3>
+      <div id="commentsContainer"></div>
+    </section>
+  </body>
 </html>

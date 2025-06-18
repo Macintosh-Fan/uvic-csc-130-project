@@ -1,23 +1,42 @@
 <?php
-$POST_FILENAME = "posts.json";
+$postId      = isset($_POST['postId'])      ? (int) $_POST['postId']      : null;
+$rawComment  = isset($_POST['newComment'])  ? trim($_POST['newComment']) : '';
 
-if (!(isset($_POST["newComment"]) && isset($_POST["postId"]))) {
-    die("Something ain't set.");
+if ($postId === null) {
+    http_response_code(400);
+    die('no post');
 }
 
-$author = isset($_COOKIE["username"]) ? $_COOKIE["username"] : null;
+$postsFile = __DIR__ . '/posts.json';
+$data      = file_get_contents($postsFile);
+if ($data === false) {
+    http_response_code(500);
+    die('no file');
+}
+
+$posts = json_decode($data, true);
+// if (!is_array($posts) || !isset($posts[$postId])) {
+//     http_response_code(404);
+//     die('no post');
+// }
+
+$author = (isset($_COOKIE['username']) && $_COOKIE['username'])
+        ? htmlspecialchars($_COOKIE['username'], ENT_QUOTES, 'UTF-8')
+        : 'Guest';
+
 $comment = [
-    "author" => $author,
-    "time" => (int) (microtime(true) * 1000),
-    "content" => $_POST["newComment"],
+    'author'  => $author,
+    'time'    => (int) (microtime(true) * 1000),
+    'content' => htmlspecialchars($rawComment, ENT_QUOTES, 'UTF-8'),
 ];
 
-$postId = $_POST["postId"];
-$posts = json_decode(file_get_contents($POST_FILENAME), true);
-$post = $posts[(int) $postId];
-array_push($post["comments"], $comment);
+$posts[$postId]['comments'][] = $comment;
 
-file_put_contents($POST_FILENAME, json_encode($posts, JSON_PRETTY_PRINT));
+$options = JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE;
+if (file_put_contents($postsFile, json_encode($posts, $options)) === false) {
+    http_response_code(500);
+    die('file might be locked (very rare)');
+}
 
-header("Location: post.html?id=" . $postId);
-?>
+header('Location: post.html?id=' . $postId);
+exit;
